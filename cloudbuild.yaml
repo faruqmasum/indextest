@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        gcloud compute scp --recurse --zone=us-central1-a index.html masum-windows:C:\Apache24\htdocs
+    args: ['compute', 'scp', '--recurse', '--zone=us-central1-a', 'index.html', 'masum-windows:C:\Apache24\htdocs']
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  logsBucket: gs://masum-test
