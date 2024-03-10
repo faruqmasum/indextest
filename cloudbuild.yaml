@@ -3,4 +3,4 @@ steps:
     args: ['compute', 'scp', '--recurse', '--zone=<your_vm_zone>', 'new_index.html', '<your_vm_name>:<path_to_htdocs>']
 options:
   logging: CLOUD_LOGGING_ONLY
-  logsBucket: masum-test
+  logsBucket: gs://masum-test
