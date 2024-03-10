@@ -1,6 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['compute', 'scp', '--recurse', '--zone=<your_vm_zone>', 'new_index.html', '<your_vm_name>:<path_to_htdocs>']
+    args: ['compute', 'scp', '--recurse', '--zone=<us-central1-a>', 'index.html', '<masum-windows>:<C:\Apache24\htdocs>']
+
 options:
   logging: CLOUD_LOGGING_ONLY
-  logs_bucket: gs://masum-test
+  logsBucket: gs://masum-test
