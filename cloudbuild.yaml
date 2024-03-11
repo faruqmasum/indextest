@@ -5,3 +5,6 @@ steps:
       - '-c'
       - |
         gcloud compute scp --recurse --zone=us-central1-a index.html masum-windows:C:\Apache24\htdocs
+options:
+  logging: CLOUD_LOGGING_ONLY
+  logsBucket: gs://masum-test
